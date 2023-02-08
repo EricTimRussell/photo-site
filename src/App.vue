@@ -1,17 +1,14 @@
 <template>
   <header>
-    <div class="bg-slate-500">
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-      </nav>
-    </div>
+    <NavbarComponent />
   </header>
 
   <RouterView />
 </template>
 
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
+import NavbarComponent from "./components/NavbarComponent.vue";
 </script>
 
 <style>
