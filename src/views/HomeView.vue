@@ -116,21 +116,17 @@
   </section>
 </template>
 
-<script>
-export default {
-  setup() {
+<script setup>
+// import { useFirestore, useCollection } from 'vuefire'
+// import { collection } from 'firebase/firestore'
 
+// const db = useFirestore()
 
-    return {}
-  }
-}
+// const photoCollection = useCollection(collection(db, 'photos'))
+
 </script>
 
 <style scoped>
-/* .featured-img {
-  width: max-content;
-} */
-
 .carousel {
   margin-left: 20%;
   margin-right: 20%;
@@ -233,8 +229,8 @@ ul.slides input {
 
 .carousel-dots .carousel-dot {
   display: inline-block;
-  width: 30px;
-  height: 30px;
+  width: 20px;
+  height: 20px;
   border-radius: 50%;
   background-color: #fff;
   opacity: 0.5;
